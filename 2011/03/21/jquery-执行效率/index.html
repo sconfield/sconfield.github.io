@@ -1,0 +1,423 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>jQuery 执行效率 | 张小盒的前端世界</title>
+  <meta name="author" content="sconfield">
+  
+  <meta name="description" content="sconfield 前端 javascript">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="jQuery 执行效率"/>
+  <meta property="og:site_name" content="张小盒的前端世界"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="atom.xml" title="张小盒的前端世界" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+<script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fab04ab5ada5df75e0a0acbeb8021f3dd' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">张小盒的前端世界</a></h1>
+  <h2><a href="/">以此 blog 来怀念张小盒童鞋长年累月所敲过的代码。</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">首页</a></li>
+    
+      <li><a href="/archives">归档</a></li>
+    
+      <li><a href="/about">关于</a></li>
+    
+      <li><a href="/todolist">ToDo</a></li>
+    
+    <li>
+    	<a href="/atom.xml">RSS</a>
+    </li>
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2011-03-21T12:39:00.000Z"><a href="/2011/03/21/jquery-执行效率/">3月 21 2011</a></time>
+      
+      
+  
+    <h1 class="title">jQuery 执行效率</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <blockquote>
+<p>当我们驯服了 <strong>jQuery</strong> 后，我们就会想着要驾驭她，<strong><em>政府</em></strong> 她，完全的控制她，以便于用更愉快的方式书写代码。</p>
+</blockquote>
+<h1>so，让 <strong>jQuery</strong> 唱 <strong><em>政府</em></strong> 吧！</h1>
+<h2>作为专业人士，严谨的编程方式是必需的，她是提高编程体验的基础！</h2>
+<h3>匈牙利类型标记法：b, i, f, s, a, o, $, fn, v, re</h3>
+<blockquote>
+<p>告诉你一个秘密：JavaScript没有块级作用域。（什么麻辣鸡块？）</p>
+</blockquote>
+<h3>正则不要打死：</h3>
+<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="code"><pre>RegExp(pat, attr)
+　　pat: 正则字符串
+　　　　[a-Z], [^<span class="number">0</span>-<span class="number">9</span>], |, ?, +, *...这些可以懂
+　　　　a{N}: N个a
+　　　　a{N1, N2}: N1个a, 或者N2个a
+　　　　a{M, }: 至少M个a
+　　　　^a: a开头
+　　　　$a: a结尾
+　　　　?=a, ?!a: 可以不冻。。
+楼下大写都是非，你懂的：
+　　　　\w: 单词
+　　　　\d: 数字
+　　　　\s: 空白字符
+　　　　\b: 单词开头或者结尾
+　　attr:
+　　　　global(g): 全局匹配
+　　　　ignoreCase(i): 区分大小写
+</pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h3><strong>小面</strong> 向对象</h3>
+<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="code"><pre><span class="function"><span class="keyword">function</span> <span class="title">Ninja</span><span class="params">(sName, bGender)</span> {</span>
+  <span class="keyword">this</span>.sName= sName;
+  <span class="keyword">this</span>.bGender= bGender;
+
+  <span class="keyword">if</span> (<span class="keyword">typeof</span> Ninja._initialized == <span class="string">"undefined"</span>) {
+    Ninja.prototype.fnNinjutsu= <span class="keyword">function</span>(chakra) {
+　　　<span class="keyword">if</span>(chakra &gt; <span class="number">10</span>){
+　　　　alert(<span class="string">"wow..."</span>);
+　　　}
+    };
+
+    Ninja._initialized = <span class="literal">true</span>;
+  }
+}
+
+<span class="keyword">var</span> sasuke = <span class="keyword">new</span> Ninja(<span class="string">"sasuke"</span>, <span class="literal">true</span>);
+sasuke.fnNinjutsu(<span class="number">101</span>);
+</pre></td></tr></table></figure>
+
+<h2>当我们掌握了这些规范，下面就进入本文的中心思想</h2>
+<h3>改善 jQuery 的执行效率</h3>
+<ol>
+<li>选择 css 类，利用 id 或者 tag name 来加快筛选<ul>
+<li>$(“#nav .treeview”), $(“div.o3d”)</li>
+</ul>
+</li>
+<li>对 jQuery 对象进行多次操作，缓存变量或者链式添加<ul>
+<li>var $div = $(“div.content”)</li>
+</ul>
+</li>
+<li>DOM 操作较慢，先缓存创建字符串(<em>可考虑join</em>)，最后一次性添加 DOM 操作<ul>
+<li>options += “orz”</li>
+</ul>
+</li>
+<li>慎用jQuery.live()，其实用起很方便的</li>
+<li>给多个元素添加相同 callback 时，可以利用冒泡特性，在父节点上监听</li>
+</ol>
+<h3>高级应用</h3>
+<ol>
+<li><p>队列控制，一次执行函数：定义 Array&lt;function&gt; 时在每个 function 内添加 callback，结束时取消 callback。</p>
+<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="keyword">var</span> fnEffect_list = [
+	<span class="keyword">function</span>() {...; $(<span class="string">"div"</span>).dequeue();},
+	<span class="keyword">function</span>() {...; $(<span class="string">"div"</span>).dequeue();},
+	<span class="keyword">function</span>() {...;},
+];
+$(<span class="string">"div"</span>).queue(fnEffect_list);
+$(<span class="string">"div"</span>).dequeue();
+</pre></td></tr></table></figure>
+</li>
+<li><p>数组操作，转换数组中所有值或部分值，return null表示删除：</p>
+<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre>$.map([<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>], <span class="keyword">function</span>(outer){
+        <span class="keyword">var</span> exist_item_list = $.grep([<span class="number">3</span>, <span class="number">2</span>, <span class="number">7</span>], <span class="keyword">function</span>(inner){
+        <span class="keyword">return</span> outer == inner;
+    });
+    <span class="keyword">if</span>（exist_item_list.length == <span class="number">0</span>) <span class="keyword">return</span> <span class="literal">null</span>;
+    <span class="keyword">else</span> <span class="keyword">return</span> outer;
+});<span class="comment">//[2]</span>
+</pre></td></tr></table></figure>
+</li>
+<li><p>逐级查找DOM节点：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"end sasuke"</span> <span class="attribute">value</span>=<span class="value">"找到了"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"midway sasuke"</span> <span class="attribute">value</span>=<span class="value">"继续找"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"begin sasuke"</span> <span class="attribute">value</span>=<span class="value">"开始找"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<ul>
+<li><p>closest：从当前元素开始匹配查找，返回第一个jQuery对象</p>
+<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre>    $(<span class="string">".begin:first"</span>).closest(<span class="string">".sasuke"</span>).attr(<span class="string">"value"</span>);<span class="comment">//开始找</span>
+</pre></td></tr></table></figure>
+</li>
+<li><p>parents：从父元素开始匹配查找，返回所有匹配的jQuery对象集合</p>
+<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre>    $(<span class="string">".begin:first"</span>).parents(<span class="string">".sasuke"</span>).attr(<span class="string">"value"</span>);<span class="comment">//["开始找", "继续找", "找到了"]</span>
+</pre></td></tr></table></figure>
+
+</li>
+</ul>
+</li>
+</ol>
+<p><strong><em>注意：</em></strong> <em>$(“div”).val()与$(“div”).attr(“value”)是有区别滴！</em><br>4.  设置全局ajax默认选项：</p>
+<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre>$.ajaxSetup({
+    async: <span class="literal">false</span>,
+    cache: <span class="literal">false</span>,
+    timeout: <span class="number">1000</span>,
+    type: <span class="string">"POST"</span>,
+    <span class="comment">//url</span>
+    dataType: <span class="string">"json"</span>
+    <span class="comment">//data</span>
+});
+</pre></td></tr></table></figure>
+
+<ol>
+<li>代理this对象：将$(“div”)替换为{name:“sconfield”}，貌似可以用with代替一哈哈<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+2
+3
+</pre></td><td class="code"><pre>$(<span class="string">"div"</span>).click($.proxy(<span class="keyword">function</span>(){
+	alert(<span class="keyword">this</span>.name);<span class="comment">//sconfield</span>
+}, {name:<span class="string">"sconfield"</span>}));
+</pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h1>是不是不明觉厉啊！</h1>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/代码墙/">代码墙</a>
+  </div>
+
+        
+  
+  <div class="tags">
+    <a href="/tags/js/">js</a>
+  </div>
+
+        
+  <div class="addthis addthis_toolbox addthis_default_style">
+    
+      <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+    
+    
+      <a class="addthis_button_tweet"></a>
+    
+    
+      <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    
+    
+      <a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>
+    
+    <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
+
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+	<!-- Duoshuo Comment BEGIN -->
+	<div class="ds-thread"></div>
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"sconfield"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = 'http://static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		|| document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- Duoshuo Comment END -->
+</section>
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:yoursite.com">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/代码墙/">代码墙</a><small>8</small></li>
+  
+    <li><a href="/categories/生活/">生活</a><small>2</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">标签</h3>
+  <ul class="entry">
+  
+    <li><a href="/tags/css/">css</a><small>2</small></li>
+  
+    <li><a href="/tags/js/">js</a><small>6</small></li>
+  
+    <li><a href="/tags/life/">life</a><small>2</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">标签云</h3>
+  <div class="entry">
+    <a href="/tags/css/" style="font-size: 10.00px;">css</a><a href="/tags/js/" style="font-size: 13.33px;">js</a><a href="/tags/life/" style="font-size: 16.67px;">life</a>
+  </div>
+</div>
+
+
+  <iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=0&skin=8&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=2090984677&verifier=c3357925&dpc=1"></iframe>
+
+  <div class="widget tag">
+<h3 class="title">友情链接</h3>
+<ul class="entry">
+<li><a href="http://sconfield.github.io/fool-game" title="fool-game">贪吃蛇围观飞机大战俄罗斯方块</a></li>
+</ul>
+</div>
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2013 sconfield
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+<script type="text/javascript">
+var disqus_shortname = 'true';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>

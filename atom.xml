@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[张小盒的前端世界]]></title>
+  <subtitle><![CDATA[以此 blog 来怀念张小盒童鞋长年累月所敲过的代码。]]></subtitle>
+  <link href="http://yoursite.com/atom.xml" rel="self"/>
+  <link href="http://yoursite.com"/>
+  <updated>2013-09-15T15:24:36.431Z</updated>
+  <id>http://yoursite.com/</id>
+  <author>
+    <name><![CDATA[sconfield]]></name>
+    <email><![CDATA[sconfield.meizu@gmail.com]]></email>
+  </author>
+  <generator uri="http://zespia.tw/hexo">Hexo</generator>
+  <entry>
+    <title type="html"><![CDATA[传球]]></title>
+    <link href="http://yoursite.com/2013/09/15/传球/"/>
+    <id>http://yoursite.com/2013/09/15/传球/</id>
+    <published>2013-09-15T14:08:00.000Z</published>
+    <updated>2013-09-15T15:23:15.000Z</updated>
+    <content type="html"><![CDATA[<blockquote>
+<p>传球，突然一声尖叫 <strong>“春哥，我爱你！”</strong> 三分线外接球后看都不看篮筐立马拔地而起，在空中我仿佛阿尔伯特*爱因斯坦附体，根据自己的广义狭义各种论、阿尔法贝塔贝吉塔等等函数计算后，我决定还是先把球扔出去再说。<strong>“唰”</strong> 信春哥，还是那么好使；信春哥，麻麻再也不用担心我的学习了！</p>
+</blockquote>
+<p>本来今天最想欺负 tom 的，可恶这货在网管加班穿衬衫，觉得穿衬衫打球不够 <em>迪奥</em>。看来只有下周再玩他咯，糊糊糊~</p>
+<p><img src="/img/hot_basketball.jpg" alt="传球"></p>
+<a id="more"></a>
+
+<h2>每周香酱紫运动一下下，真是极好的啦！</h2>
+<p>这次虽然有突破、有得分、有篮板。但表现出的问题还非常严重，严重缺油啊，而且还漏油，漏好多，刚加满，前面后面都在漏了，囧(<em>我的晨跑快回来吧</em>)；控球时稳时不稳，投篮中指拨球感觉不到位，需要抱球睡觉，增进球球对我的好感；缺少好的传球，这不是我的风格。</p>
+<p>哦，该休息了！</p>
+]]></content>
+    <category scheme="http://yoursite.com/tags/life/" term="life"/>
+    <category scheme="http://yoursite.com/categories/生活/" term="生活"/>
+  </entry>
+  <entry>
+    <title type="html"><![CDATA[新的生活]]></title>
+    <link href="http://yoursite.com/2013/09/14/新的生活/"/>
+    <id>http://yoursite.com/2013/09/14/新的生活/</id>
+    <published>2013-09-14T07:15:15.000Z</published>
+    <updated>2013-09-15T15:19:46.000Z</updated>
+    <content type="html"><![CDATA[<blockquote>
+<p>纪念那一双如黑夜般的眼睛和每一个明亮的夜晚……</p>
+</blockquote>
+<p>　　9月13号，是 <strong>程序员节</strong> 。哈哈，作为原生态 <strong>迪奥斯</strong> 的程序员的我们都惊呆了！幻想着和教师一样，受到人们尊敬；不尊敬，放半天假也行啊。可惜那只是我们的 <em>程序员梦</em> ，不是高端大气上档次的 <strong>中国梦</strong> ，因为除了我们，没人知道……</p>
+<p>　　更加讽刺的是：9月13号是我离开 <del>xxxx</del> 的那一天。曾经斗志高昂的加入 <del>xx</del> 战团，誓要和小伙伴们杀出一片天地。到如今却是反感各种代码，情绪低落；早上睡不醒，晚上不能睡<em>（加班ing）</em>；不自觉的说脏话，极度厌烦收邮件；超级讨厌 <strong>“ 辛苦一下 ”、“ 想办法撒 ”、“ 周末之前 ”、“ 用户要用 ”、“ 我请大家吃饭</strong> <em>(简写：周末加班)</em> <strong>”</strong> 等各种 <strong><em>草泥马</em></strong> 词汇。卧槽，粗鲁鸟，粗鲁鸟~ 如果不是生活压力大，不是房贷高，不是没时间面试，谁愿意过这样的生活，或者根本就不知道生活是什么滋味。</p>
+<blockquote>
+<blockquote>
+<p>最近开复老师的事情深深的触动了我： <strong>以健康为代价的坚持不一定是对的</strong>，和那些年的 <strong>follow your heart</strong> 一样，再次进化了我的写轮眼。</p>
+</blockquote>
+</blockquote>
+<pre><code>没有人比你更在乎你的未来，所以：stay hungry, stay <span class="transposed_variable">foolish.</span></code></pre>
+<p>　　迎着羡慕的目光，迎着难得的骄阳，收拾好 <strong>“ 装备 ”</strong>，踏上新的征程……</p>
+<p><img src="/img/new_life.jpg" alt="周六的下午"></p>
+<p>　　对于不可预测的未来，对于浩瀚的计算机技术，人生阵痛中的我，依然不变的是 <strong>强烈的征服欲！</strong>  </p>
+<hr>
+<h1>Hello world</h1>
+]]></content>
+    <category scheme="http://yoursite.com/tags/life/" term="life"/>
+    <category scheme="http://yoursite.com/categories/生活/" term="生活"/>
+  </entry>
+  <entry>
+    <title type="html"><![CDATA[css 定位]]></title>
+    <link href="http://yoursite.com/2013/09/12/css-定位/"/>
+    <id>http://yoursite.com/2013/09/12/css-定位/</id>
+    <published>2013-09-12T13:24:28.000Z</published>
+    <updated>2013-09-15T06:17:26.000Z</updated>
+    <content type="html"><![CDATA[<p>div、h1 或 p 元素常常被称为块级元素<br>    span、a 或 strong 等元素称为行内元素</p>
+<h3>CSS 有三种基本的定位机制：</h3>
+<ol>
+<li>普通流<ul>
+<li>static</li>
+<li>relative</li>
+</ul>
+</li>
+<li>浮动<ul>
+<li>float: [left||right]</li>
+<li>clear: [left||right||both]</li>
+</ul>
+</li>
+<li>绝对定位<ul>
+<li>absolute</li>
+<li>fixed</li>
+</ul>
+</li>
+</ol>
+<a id="more"></a>
+
+<h3>position 属性值的含义：</h3>
+<dl><br>    <dt>static</dt><br>    <dd>静态的，元素框正常生成。</dd><br>    <dt>relative</dt><br>    <dd>相对定位，元素框相对于 static 偏移某个距离。</dd><br>    <dt>absolute</dt><br>    <dd>绝对定位，元素框从文档流完全删除，与文档流无关，可以覆盖页面上的其它元素。</dd><br>    <dt>fixed</dt><br>    <dd>元素框的表现类似于将 position 设置为 absolute，不过其包含块是视窗(window)本身。</dd><br></dl>]]></content>
+    <category scheme="http://yoursite.com/tags/css/" term="css"/>
+    <category scheme="http://yoursite.com/categories/代码墙/" term="代码墙"/>
+  </entry>
+  <entry>
+    <title type="html"><![CDATA[seajs 使用指南]]></title>
+    <link href="http://yoursite.com/2013/09/12/seajs-使用指南/"/>
+    <id>http://yoursite.com/2013/09/12/seajs-使用指南/</id>
+    <published>2013-09-12T13:20:38.000Z</published>
+    <updated>2013-09-15T06:18:16.000Z</updated>
+    <content type="html"><![CDATA[<blockquote>
+<p>Sea.js 提供了一个全局方法——define，用来定义一个 CMD 模块。</p>
+</blockquote>
+<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+</pre></td><td class="code"><pre>define(<span class="keyword">function</span>(require, exports, module) {
+    <span class="comment">// 模块代码</span>
+    <span class="comment">// 使用require获取依赖模块的接口</span>
+    <span class="comment">// 使用exports或者module来暴露该模块的对外接口</span>
+})
+</pre></td></tr></table></figure>
+
+<blockquote>
+<p>定义好模块后，在页面引入 sea.js。为了让 sea.js 内部能快速获取到自身路径，推荐手动加上 id 属性。</p>
+</blockquote>
+<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+</pre></td><td class="code"><pre>&lt;script src=<span class="string">"http://path/to/seajs/1.2.0/sea.js"</span> id=<span class="string">"seajs"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+<span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript">
+    seajs.use(<span class="string">'./hello'</span>)
+
+    <span class="comment">// 可以带 callback</span>
+    seajs.use(<span class="string">'./hello'</span>, <span class="keyword">function</span>(hello) {
+      hello.api()
+    })
+    
+    <span class="comment">// 也可同时（依次）加载多个模块</span>
+    seajs.use([<span class="string">'./hello'</span>, <span class="string">'./world'</span>], <span class="keyword">function</span>(hello, world) {
+      hello.api()
+      world.api()
+    })
+</span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span>
+</pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<blockquote>
+<p>自定义配置，简化代码：seajs.config(options)</p>
+</blockquote>
+<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+</pre></td><td class="code"><pre>seajs.config({
+  <span class="comment">// 别名配置</span>
+  <span class="comment">// 使用 alias，可以让文件的真实路径与调用标识分开，有利于统一维护</span>
+  alias: {
+    <span class="string">'es5-safe'</span>: <span class="string">'gallery/es5-safe/0.9.3/es5-safe'</span>,
+    <span class="string">'json'</span>: <span class="string">'gallery/json/1.0.2/json'</span>,
+    <span class="string">'jquery'</span>: <span class="string">'jquery/jquery/1.10.1/jquery'</span>
+  },
+
+  <span class="comment">// 路径配置</span>
+  <span class="comment">// 当目录比较深，或需要跨目录调用模块时，可以使用 paths 来简化书写</span>
+  paths: {
+    <span class="string">'gallery'</span>: <span class="string">'https://a.alipayobjects.com/gallery'</span>
+  },
+
+  <span class="comment">// 变量配置，模块路径在运行时才能确定</span>
+  <span class="comment">// vars 配置的是模块标识中的变量值，在模块标识中用 {key} 来表示变量</span>
+  vars: {
+    <span class="string">'locale'</span>: <span class="string">'zh-cn'</span>
+  },
+
+  <span class="comment">// 映射配置</span>
+  <span class="comment">// 该配置可对模块路径进行映射修改，可用于路径转换、在线调试等</span>
+  map: [
+    [<span class="string">'http://example.com/js/app/'</span>, <span class="string">'http://localhost/js/app/'</span>]
+  ],
+
+  <span class="comment">// 预加载项</span>
+  <span class="comment">// 可以在普通模块加载前，提前加载并初始化好指定模块</span>
+  preload: [
+    Function.prototype.bind ? <span class="string">''</span> : <span class="string">'es5-safe'</span>,
+    <span class="keyword">this</span>.JSON ? <span class="string">''</span> : <span class="string">'json'</span>
+  ],
+
+  <span class="comment">// 调试模式</span>
+  debug: <span class="literal">true</span>,
+
+  <span class="comment">// Sea.js 的基础路径</span>
+  base: <span class="string">'http://example.com/path/to/base/'</span>,
+
+  <span class="comment">// 文件编码</span>
+  charset: <span class="string">'utf-8'</span>
+});
+</pre></td></tr></table></figure>
+
+<p><em>注意：一般请不要配置 base 路径，把 sea.js 放在合适的路径往往更简单一致。</em></p>
+]]></content>
+    <category scheme="http://yoursite.com/tags/js/" term="js"/>
+    <category scheme="http://yoursite.com/categories/代码墙/" term="代码墙"/>
+  </entry>
+  <entry>
+    <title type="html"><![CDATA[相等与比较]]></title>
+    <link href="http://yoursite.com/2013/09/12/相等与比较/"/>
+    <id>http://yoursite.com/2013/09/12/相等与比较/</id>
+    <published>2013-09-12T13:19:24.000Z</published>
+    <updated>2013-09-15T05:34:24.000Z</updated>
+    <content type="html"><![CDATA[<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="string">""</span> == <span class="string">"0"</span> <span class="comment">// false</span>
+<span class="number">0</span> == <span class="string">""</span> <span class="comment">// true</span>
+<span class="number">0</span> == <span class="string">"0"</span> <span class="comment">// true</span>
+<span class="literal">false</span> == <span class="string">"false"</span> <span class="comment">// false</span>
+<span class="literal">false</span> == <span class="string">"0"</span> <span class="comment">// true</span>
+<span class="literal">false</span> == <span class="literal">undefined</span> <span class="comment">// false</span>
+<span class="literal">false</span> == <span class="literal">null</span> <span class="comment">// false</span>
+<span class="literal">null</span> == <span class="literal">undefined</span> <span class="comment">// true</span>
+<span class="string">" \t\r\n"</span> == <span class="number">0</span> <span class="comment">// true</span>
+</pre></td></tr></table></figure>
+
+<ul>
+<li>0 is <strong>false</strong></li>
+<li>“” is <strong>false</strong></li>
+<li>undefined is <strong>false</strong></li>
+<li>null is <strong>false</strong></li>
+</ul>
+]]></content>
+    <category scheme="http://yoursite.com/tags/js/" term="js"/>
+    <category scheme="http://yoursite.com/categories/代码墙/" term="代码墙"/>
+  </entry>
+  <entry>
+    <title type="html"><![CDATA[setTimeout 和 setInterval 潜在错误]]></title>
+    <link href="http://yoursite.com/2013/09/12/settimeout-和-setinterval-潜在错误/"/>
+    <id>http://yoursite.com/2013/09/12/settimeout-和-setinterval-潜在错误/</id>
+    <published>2013-09-12T13:16:13.000Z</published>
+    <updated>2013-09-15T06:18:51.000Z</updated>
+    <content type="html"><![CDATA[<blockquote>
+<p>setTimeout 的第一个参数是函数对象，一个常犯的错误是这样的 <del>setTimeout(<strong>foo()</strong>, 1000)</del>， 这里回调函数是 foo 的返回值，而不是 foo 本身。 大部分情况下，这是一个潜在的错误，因为如果函数返回 undefined， setTimeout 也不会报错。</p>
+</blockquote>
+<h3>正确方式：</h3>
+<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="function"><span class="keyword">function</span> <span class="title">Foo</span><span class="params">()</span> {</span>
+    <span class="keyword">this</span>.value = <span class="number">42</span>;
+    <span class="keyword">this</span>.method = <span class="keyword">function</span>() {
+        <span class="comment">// this 指向全局对象</span>
+        console.log(<span class="keyword">this</span>.value); <span class="comment">// 输出：undefined</span>
+    };
+    setTimeout(<span class="keyword">this</span>.method, <span class="number">500</span>);
+}
+<span class="keyword">new</span> Foo();
+</pre></td></tr></table></figure>
+
+<p><br /></p>
+<hr>
+<p><br /></p>
+<blockquote>
+<p>当回调函数的执行被阻塞时，setInterval 仍然会发布更多的回调指令。在很小的定时间隔情况下，这会<strong>导致回调函数被堆积起来</strong>。</p>
+</blockquote>
+<h3>最简单也是最容易控制的方案，是在回调函数内部使用 setTimeout 函数：</h3>
+<a id="more"></a>
+
+<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="function"><span class="keyword">function</span> <span class="title">foo</span><span class="params">()</span>{</span>
+    <span class="comment">// 阻塞执行 1 秒</span>
+    setTimeout(foo, <span class="number">1000</span>);
+}
+foo();
+</pre></td></tr></table></figure>
+
+<p><br /></p>
+<hr>
+<p><br /></p>
+<blockquote>
+<p>setTimeout 和 setInterval 也接受第一个参数为字符串的情况。<strong><em>这个特性绝对不要使用</em></strong>，因为它在内部使用了 eval。eval 函数会从<strong>全局作用域</strong>中执行。当需要向回调函数传递参数时，可以创建一个匿名函数，在函数内执行真实的回调函数。</p>
+</blockquote>
+<h3>小心 eval：</h3>
+<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="code"><pre><span class="function"><span class="keyword">function</span> <span class="title">foo</span><span class="params">()</span> {</span>
+    <span class="comment">// 将会被调用</span>
+}
+<span class="function"><span class="keyword">function</span> <span class="title">bar</span><span class="params">()</span> {</span>
+    <span class="function"><span class="keyword">function</span> <span class="title">foo</span><span class="params">()</span> {</span>
+        <span class="comment">// 不会被调用</span>
+    }
+    setTimeout(<span class="string">'foo()'</span>, <span class="number">1000</span>);
+}
+bar();
+</pre></td></tr></table></figure>
+
+]]></content>
+    <category scheme="http://yoursite.com/tags/js/" term="js"/>
+    <category scheme="http://yoursite.com/categories/代码墙/" term="代码墙"/>
+  </entry>
+  <entry>
+    <title type="html"><![CDATA[css 边距简写，值复制]]></title>
+    <link href="http://yoursite.com/2013/09/12/css-边距简写，值复制/"/>
+    <id>http://yoursite.com/2013/09/12/css-边距简写，值复制/</id>
+    <published>2013-09-12T13:05:41.000Z</published>
+    <updated>2013-09-15T05:35:44.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="/img/ct_css_margin_value.gif" alt="css 边距简写"></p>
+<h3>值复制：</h3>
+<ul>
+<li>4个值，按顺时针赋值，图中从左往右；</li>
+<li>3个值，<strong>left</strong> 从 <strong>right</strong> 复制得到；</li>
+<li>2个值，<strong>top</strong> 和 <strong>bottom</strong> 一组，<strong>right</strong> 和 <strong>left</strong> 一组；</li>
+<li>1个值，全部一样。</li>
+</ul>
+]]></content>
+    <category scheme="http://yoursite.com/tags/css/" term="css"/>
+    <category scheme="http://yoursite.com/categories/代码墙/" term="代码墙"/>
+  </entry>
+  <entry>
+    <title type="html"><![CDATA[让 js 以低碳的方式拼接字符串]]></title>
+    <link href="http://yoursite.com/2013/09/11/让-js-以低碳的方式拼接字符串/"/>
+    <id>http://yoursite.com/2013/09/11/让-js-以低碳的方式拼接字符串/</id>
+    <published>2013-09-11T14:22:31.000Z</published>
+    <updated>2013-09-15T05:35:07.000Z</updated>
+    <content type="html"><![CDATA[<blockquote>
+<p>js 中字符串是不可变的，所以用“+=”或者 str1.concat(strx..) 拼接字符串是非常耗资源的（<em>已用此方案破坏了众多项目</em>）。</p>
+</blockquote>
+<h1>解决方案：</h1>
+<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="keyword">var</span> arr = <span class="keyword">new</span> Array;
+arr[<span class="number">0</span>] = <span class="string">"Hello "</span>;
+arr[<span class="number">1</span>] = <span class="string">"world"</span>;
+<span class="keyword">var</span> str = arr.join(<span class="string">""</span>);
+console.info(str);
+</pre></td></tr></table></figure>
+
+<p><strong><em>注：简单字符串拼接还是用“+=”或者 “concat” 就好，因为创建数组也是高消费。</em></strong></p>
+]]></content>
+    <category scheme="http://yoursite.com/tags/js/" term="js"/>
+    <category scheme="http://yoursite.com/categories/代码墙/" term="代码墙"/>
+  </entry>
+  <entry>
+    <title type="html"><![CDATA[jQuery 执行效率]]></title>
+    <link href="http://yoursite.com/2011/03/21/jquery-执行效率/"/>
+    <id>http://yoursite.com/2011/03/21/jquery-执行效率/</id>
+    <published>2011-03-21T12:39:00.000Z</published>
+    <updated>2013-09-15T06:17:48.000Z</updated>
+    <content type="html"><![CDATA[<blockquote>
+<p>当我们驯服了 <strong>jQuery</strong> 后，我们就会想着要驾驭她，<strong><em>政府</em></strong> 她，完全的控制她，以便于用更愉快的方式书写代码。</p>
+</blockquote>
+<h1>so，让 <strong>jQuery</strong> 唱 <strong><em>政府</em></strong> 吧！</h1>
+<h2>作为专业人士，严谨的编程方式是必需的，她是提高编程体验的基础！</h2>
+<h3>匈牙利类型标记法：b, i, f, s, a, o, $, fn, v, re</h3>
+<blockquote>
+<p>告诉你一个秘密：JavaScript没有块级作用域。（什么麻辣鸡块？）</p>
+</blockquote>
+<h3>正则不要打死：</h3>
+<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="code"><pre>RegExp(pat, attr)
+　　pat: 正则字符串
+　　　　[a-Z], [^<span class="number">0</span>-<span class="number">9</span>], |, ?, +, *...这些可以懂
+　　　　a{N}: N个a
+　　　　a{N1, N2}: N1个a, 或者N2个a
+　　　　a{M, }: 至少M个a
+　　　　^a: a开头
+　　　　$a: a结尾
+　　　　?=a, ?!a: 可以不冻。。
+楼下大写都是非，你懂的：
+　　　　\w: 单词
+　　　　\d: 数字
+　　　　\s: 空白字符
+　　　　\b: 单词开头或者结尾
+　　attr:
+　　　　global(g): 全局匹配
+　　　　ignoreCase(i): 区分大小写
+</pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h3><strong>小面</strong> 向对象</h3>
+<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="code"><pre><span class="function"><span class="keyword">function</span> <span class="title">Ninja</span><span class="params">(sName, bGender)</span> {</span>
+  <span class="keyword">this</span>.sName= sName;
+  <span class="keyword">this</span>.bGender= bGender;
+
+  <span class="keyword">if</span> (<span class="keyword">typeof</span> Ninja._initialized == <span class="string">"undefined"</span>) {
+    Ninja.prototype.fnNinjutsu= <span class="keyword">function</span>(chakra) {
+　　　<span class="keyword">if</span>(chakra &gt; <span class="number">10</span>){
+　　　　alert(<span class="string">"wow..."</span>);
+　　　}
+    };
+
+    Ninja._initialized = <span class="literal">true</span>;
+  }
+}
+
+<span class="keyword">var</span> sasuke = <span class="keyword">new</span> Ninja(<span class="string">"sasuke"</span>, <span class="literal">true</span>);
+sasuke.fnNinjutsu(<span class="number">101</span>);
+</pre></td></tr></table></figure>
+
+<h2>当我们掌握了这些规范，下面就进入本文的中心思想</h2>
+<h3>改善 jQuery 的执行效率</h3>
+<ol>
+<li>选择 css 类，利用 id 或者 tag name 来加快筛选<ul>
+<li>$(“#nav .treeview”), $(“div.o3d”)</li>
+</ul>
+</li>
+<li>对 jQuery 对象进行多次操作，缓存变量或者链式添加<ul>
+<li>var $div = $(“div.content”)</li>
+</ul>
+</li>
+<li>DOM 操作较慢，先缓存创建字符串(<em>可考虑join</em>)，最后一次性添加 DOM 操作<ul>
+<li>options += “orz”</li>
+</ul>
+</li>
+<li>慎用jQuery.live()，其实用起很方便的</li>
+<li>给多个元素添加相同 callback 时，可以利用冒泡特性，在父节点上监听</li>
+</ol>
+<h3>高级应用</h3>
+<ol>
+<li><p>队列控制，一次执行函数：定义 Array&lt;function&gt; 时在每个 function 内添加 callback，结束时取消 callback。</p>
+<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="keyword">var</span> fnEffect_list = [
+	<span class="keyword">function</span>() {...; $(<span class="string">"div"</span>).dequeue();},
+	<span class="keyword">function</span>() {...; $(<span class="string">"div"</span>).dequeue();},
+	<span class="keyword">function</span>() {...;},
+];
+$(<span class="string">"div"</span>).queue(fnEffect_list);
+$(<span class="string">"div"</span>).dequeue();
+</pre></td></tr></table></figure>
+</li>
+<li><p>数组操作，转换数组中所有值或部分值，return null表示删除：</p>
+<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre>$.map([<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>], <span class="keyword">function</span>(outer){
+        <span class="keyword">var</span> exist_item_list = $.grep([<span class="number">3</span>, <span class="number">2</span>, <span class="number">7</span>], <span class="keyword">function</span>(inner){
+        <span class="keyword">return</span> outer == inner;
+    });
+    <span class="keyword">if</span>（exist_item_list.length == <span class="number">0</span>) <span class="keyword">return</span> <span class="literal">null</span>;
+    <span class="keyword">else</span> <span class="keyword">return</span> outer;
+});<span class="comment">//[2]</span>
+</pre></td></tr></table></figure>
+</li>
+<li><p>逐级查找DOM节点：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"end sasuke"</span> <span class="attribute">value</span>=<span class="value">"找到了"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"midway sasuke"</span> <span class="attribute">value</span>=<span class="value">"继续找"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"begin sasuke"</span> <span class="attribute">value</span>=<span class="value">"开始找"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<ul>
+<li><p>closest：从当前元素开始匹配查找，返回第一个jQuery对象</p>
+<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre>    $(<span class="string">".begin:first"</span>).closest(<span class="string">".sasuke"</span>).attr(<span class="string">"value"</span>);<span class="comment">//开始找</span>
+</pre></td></tr></table></figure>
+</li>
+<li><p>parents：从父元素开始匹配查找，返回所有匹配的jQuery对象集合</p>
+<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre>    $(<span class="string">".begin:first"</span>).parents(<span class="string">".sasuke"</span>).attr(<span class="string">"value"</span>);<span class="comment">//["开始找", "继续找", "找到了"]</span>
+</pre></td></tr></table></figure>
+
+</li>
+</ul>
+</li>
+</ol>
+<p><strong><em>注意：</em></strong> <em>$(“div”).val()与$(“div”).attr(“value”)是有区别滴！</em><br>4.  设置全局ajax默认选项：</p>
+<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre>$.ajaxSetup({
+    async: <span class="literal">false</span>,
+    cache: <span class="literal">false</span>,
+    timeout: <span class="number">1000</span>,
+    type: <span class="string">"POST"</span>,
+    <span class="comment">//url</span>
+    dataType: <span class="string">"json"</span>
+    <span class="comment">//data</span>
+});
+</pre></td></tr></table></figure>
+
+<ol>
+<li>代理this对象：将$(“div”)替换为{name:“sconfield”}，貌似可以用with代替一哈哈<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+2
+3
+</pre></td><td class="code"><pre>$(<span class="string">"div"</span>).click($.proxy(<span class="keyword">function</span>(){
+	alert(<span class="keyword">this</span>.name);<span class="comment">//sconfield</span>
+}, {name:<span class="string">"sconfield"</span>}));
+</pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h1>是不是不明觉厉啊！</h1>
+]]></content>
+    <category scheme="http://yoursite.com/tags/js/" term="js"/>
+    <category scheme="http://yoursite.com/categories/代码墙/" term="代码墙"/>
+  </entry>
+  <entry>
+    <title type="html"><![CDATA[jQuery.treeview 树界降临]]></title>
+    <link href="http://yoursite.com/2010/11/26/jquerytreeview-树界降临/"/>
+    <id>http://yoursite.com/2010/11/26/jquerytreeview-树界降临/</id>
+    <published>2010-11-26T15:29:32.000Z</published>
+    <updated>2013-09-15T06:18:02.000Z</updated>
+    <content type="html"><![CDATA[<blockquote>
+<p>农民工的小康生活都是浮云，明天终于要加班了。。。<br>放下杯具，开始调戏代码吧。</p>
+</blockquote>
+<p>　　最近搞了半天（办了很多天）的树，让哥哥我被玩够了。终于忍不住重整了一遍，将每个树节点构造成 TreeNode 的一个实例，存放在 dx_tree 数组中。TreeNode 有显示图层信息和加载子节点的方法：</p>
+<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="code"><pre>window.dx_tree=[];
+
+<span class="function"><span class="keyword">function</span> <span class="title">TreeNode</span><span class="params">(id, name, isDir, initLayer)</span> {</span>
+    <span class="function"><span class="keyword">function</span> <span class="title">_treenode</span><span class="params">()</span>{</span>
+        <span class="keyword">this</span>.id = id;
+        <span class="keyword">this</span>.name = name;
+        <span class="keyword">this</span>.isDir = isDir;
+        <span class="keyword">this</span>.initLayer = initLayer;
+    }
+    <span class="keyword">this</span>.prototype.createMe = <span class="keyword">function</span>() {
+        <span class="comment">//创建国人这个节点</span>
+        window.dx_tree[id] = <span class="keyword">this</span>;
+    };
+    <span class="keyword">this</span>.prototype.createChildren = <span class="keyword">function</span>() {
+        <span class="comment">//创建国人娃儿这些节点（利用createMe）</span>
+    }
+}
+</pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<blockquote>
+<blockquote>
+<p>有了 TreeNode 类在写右键功能的时候都方便多了。现在直接将 initLayer() 方法传入 TreeNode 中（是不是叫闭包哦？），在每次创建 TreeNode 实例的时候都会复制一遍 initLayer() 方法，有点犯罪感。。。不知怎么解决？</p>
+</blockquote>
+</blockquote>
+]]></content>
+    <category scheme="http://yoursite.com/tags/js/" term="js"/>
+    <category scheme="http://yoursite.com/categories/代码墙/" term="代码墙"/>
+  </entry>
+</feed>
