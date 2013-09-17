@@ -4,13 +4,54 @@
   <subtitle><![CDATA[以此 blog 来怀念张小盒童鞋长年累月所敲过的代码。]]></subtitle>
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   <link href="http://yoursite.com"/>
-  <updated>2013-09-15T15:24:36.431Z</updated>
+  <updated>2013-09-17T08:31:50.279Z</updated>
   <id>http://yoursite.com/</id>
   <author>
     <name><![CDATA[sconfield]]></name>
     <email><![CDATA[sconfield.meizu@gmail.com]]></email>
   </author>
   <generator uri="http://zespia.tw/hexo">Hexo</generator>
+  <entry>
+    <title type="html"><![CDATA[为毛要用 prototype，这货是对象？“]]></title>
+    <link href="http://yoursite.com/2013/09/17/为毛要用-prototype，这货是对象？“/"/>
+    <id>http://yoursite.com/2013/09/17/为毛要用-prototype，这货是对象？“/</id>
+    <published>2013-09-17T07:21:04.000Z</published>
+    <updated>2013-09-17T08:25:55.000Z</updated>
+    <content type="html"><![CDATA[<blockquote>
+<p>自从踏上 JavaScript 这首贼船，prototype 就在我身边阴魂不散。真不知道是哪个二货设计了 prototype chain 这个模式，居然用这么奇葩的方式来实现继承。对于远古圣人的这种设计思想，我表示很尊重，真相永远只有一个！</p>
+</blockquote>
+<h3>JavaScript、Java、JavaScript、Java……</h3>
+<p>对，就像你看到的一样，JavaScript 和 Java 之间有过不堪回首的基情。当时的设计者 Michael Scofield 失散多年的哥哥 <a href="http://brendaneich.com/" target="_blank">Brendan Eich</a> 不惧 Sun 公司的<em>威逼</em>，坚决不将 OOP 引入 JavaScript；但是在 Sun 公司的<em>利诱</em>下艰难的把 <strong>new</strong> 命令引入到了 JavaScript中。</p>
+<h3>new，中看不中用</h3>
+<p>由于 Sun 公司不够<em>意思</em>，所以 Big Fish 也只是<em>意思意思</em>。在 JavaScript 中，new 后面跟的根本就不是类，只是构造<strong>函数</strong>而已（毛用没得，完全不能继承啊）。</p>
+<p>以上内容不管你信不信，反正我编的！</p>
+<p>待续……哥要买菜去鸟！！！</p>
+]]></content>
+    <category scheme="http://yoursite.com/tags/js/" term="js"/>
+  </entry>
+  <entry>
+    <title type="html"><![CDATA[前端路上的风景(BSIE)]]></title>
+    <link href="http://yoursite.com/2013/09/17/前端路上的风景(bsie)/"/>
+    <id>http://yoursite.com/2013/09/17/前端路上的风景(bsie)/</id>
+    <published>2013-09-17T01:59:09.000Z</published>
+    <updated>2013-09-17T02:28:11.000Z</updated>
+    <content type="html"><![CDATA[<h2>首先隆重介绍 <strong>BSIE</strong>，就是那个经常欺负我们，以至于非常受人 <del>鄙视</del> 的 IE 浏览器（<em>我去，这货是浏览器。。。苍啊，天啊，雅玛啊</em>）</h2>
+<h3>好吧，直接整几个 <em>二叔能翔</em> 的看看</h3>
+<ul>
+<li>关于 margin<ul>
+<li>ie6 双倍 margin<ul>
+<li>同时设置 margin 和 float</li>
+<li>display: inline</li>
+</ul>
+</li>
+<li>ie8</li>
+</ul>
+</li>
+</ul>
+]]></content>
+    <category scheme="http://yoursite.com/tags/css/" term="css"/>
+    <category scheme="http://yoursite.com/categories/兼容性/" term="兼容性"/>
+  </entry>
   <entry>
     <title type="html"><![CDATA[传球]]></title>
     <link href="http://yoursite.com/2013/09/15/传球/"/>

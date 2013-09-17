@@ -62,6 +62,129 @@
     <header>
       
         <div class="icon"></div>
+        <time datetime="2013-09-12T13:19:24.000Z"><a href="/2013/09/12/相等与比较/">9月 12 2013</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2013/09/12/相等与比较/">相等与比较</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="string">""</span> == <span class="string">"0"</span> <span class="comment">// false</span>
+<span class="number">0</span> == <span class="string">""</span> <span class="comment">// true</span>
+<span class="number">0</span> == <span class="string">"0"</span> <span class="comment">// true</span>
+<span class="literal">false</span> == <span class="string">"false"</span> <span class="comment">// false</span>
+<span class="literal">false</span> == <span class="string">"0"</span> <span class="comment">// true</span>
+<span class="literal">false</span> == <span class="literal">undefined</span> <span class="comment">// false</span>
+<span class="literal">false</span> == <span class="literal">null</span> <span class="comment">// false</span>
+<span class="literal">null</span> == <span class="literal">undefined</span> <span class="comment">// true</span>
+<span class="string">" \t\r\n"</span> == <span class="number">0</span> <span class="comment">// true</span>
+</pre></td></tr></table></figure>
+
+<ul>
+<li>0 is <strong>false</strong></li>
+<li>“” is <strong>false</strong></li>
+<li>undefined is <strong>false</strong></li>
+<li>null is <strong>false</strong></li>
+</ul>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2013-09-12T13:16:13.000Z"><a href="/2013/09/12/settimeout-和-setinterval-潜在错误/">9月 12 2013</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2013/09/12/settimeout-和-setinterval-潜在错误/">setTimeout 和 setInterval 潜在错误</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <blockquote>
+<p>setTimeout 的第一个参数是函数对象，一个常犯的错误是这样的 <del>setTimeout(<strong>foo()</strong>, 1000)</del>， 这里回调函数是 foo 的返回值，而不是 foo 本身。 大部分情况下，这是一个潜在的错误，因为如果函数返回 undefined， setTimeout 也不会报错。</p>
+</blockquote>
+<h3>正确方式：</h3>
+<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="function"><span class="keyword">function</span> <span class="title">Foo</span><span class="params">()</span> {</span>
+    <span class="keyword">this</span>.value = <span class="number">42</span>;
+    <span class="keyword">this</span>.method = <span class="keyword">function</span>() {
+        <span class="comment">// this 指向全局对象</span>
+        console.log(<span class="keyword">this</span>.value); <span class="comment">// 输出：undefined</span>
+    };
+    setTimeout(<span class="keyword">this</span>.method, <span class="number">500</span>);
+}
+<span class="keyword">new</span> Foo();
+</pre></td></tr></table></figure>
+
+<p><br /></p>
+<hr>
+<p><br /></p>
+<blockquote>
+<p>当回调函数的执行被阻塞时，setInterval 仍然会发布更多的回调指令。在很小的定时间隔情况下，这会<strong>导致回调函数被堆积起来</strong>。</p>
+</blockquote>
+<h3>最简单也是最容易控制的方案，是在回调函数内部使用 setTimeout 函数：</h3>
+
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2013/09/12/settimeout-和-setinterval-潜在错误/#more" class="more-link">让我看看</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
         <time datetime="2013-09-12T13:05:41.000Z"><a href="/2013/09/12/css-边距简写，值复制/">9月 12 2013</a></time>
       
       
@@ -85,135 +208,6 @@
     </div>
     <footer>
       
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2013-09-11T14:22:31.000Z"><a href="/2013/09/11/让-js-以低碳的方式拼接字符串/">9月 11 2013</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2013/09/11/让-js-以低碳的方式拼接字符串/">让 js 以低碳的方式拼接字符串</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <blockquote>
-<p>js 中字符串是不可变的，所以用“+=”或者 str1.concat(strx..) 拼接字符串是非常耗资源的（<em>已用此方案破坏了众多项目</em>）。</p>
-</blockquote>
-<h1>解决方案：</h1>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
-2
-3
-4
-5
-</pre></td><td class="code"><pre><span class="keyword">var</span> arr = <span class="keyword">new</span> Array;
-arr[<span class="number">0</span>] = <span class="string">"Hello "</span>;
-arr[<span class="number">1</span>] = <span class="string">"world"</span>;
-<span class="keyword">var</span> str = arr.join(<span class="string">""</span>);
-console.info(str);
-</pre></td></tr></table></figure>
-
-<p><strong><em>注：简单字符串拼接还是用“+=”或者 “concat” 就好，因为创建数组也是高消费。</em></strong></p>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2011-03-21T12:39:00.000Z"><a href="/2011/03/21/jquery-执行效率/">3月 21 2011</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2011/03/21/jquery-执行效率/">jQuery 执行效率</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <blockquote>
-<p>当我们驯服了 <strong>jQuery</strong> 后，我们就会想着要驾驭她，<strong><em>政府</em></strong> 她，完全的控制她，以便于用更愉快的方式书写代码。</p>
-</blockquote>
-<h1>so，让 <strong>jQuery</strong> 唱 <strong><em>政府</em></strong> 吧！</h1>
-<h2>作为专业人士，严谨的编程方式是必需的，她是提高编程体验的基础！</h2>
-<h3>匈牙利类型标记法：b, i, f, s, a, o, $, fn, v, re</h3>
-<blockquote>
-<p>告诉你一个秘密：JavaScript没有块级作用域。（什么麻辣鸡块？）</p>
-</blockquote>
-<h3>正则不要打死：</h3>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-</pre></td><td class="code"><pre>RegExp(pat, attr)
-　　pat: 正则字符串
-　　　　[a-Z], [^<span class="number">0</span>-<span class="number">9</span>], |, ?, +, *...这些可以懂
-　　　　a{N}: N个a
-　　　　a{N1, N2}: N1个a, 或者N2个a
-　　　　a{M, }: 至少M个a
-　　　　^a: a开头
-　　　　$a: a结尾
-　　　　?=a, ?!a: 可以不冻。。
-楼下大写都是非，你懂的：
-　　　　\w: 单词
-　　　　\d: 数字
-　　　　\s: 空白字符
-　　　　\b: 单词开头或者结尾
-　　attr:
-　　　　global(g): 全局匹配
-　　　　ignoreCase(i): 区分大小写
-</pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2011/03/21/jquery-执行效率/#more" class="more-link">让我看看</a>
-          </div>
         
         
       
@@ -249,6 +243,8 @@ console.info(str);
   
     <li><a href="/categories/代码墙/">代码墙</a><small>8</small></li>
   
+    <li><a href="/categories/兼容性/">兼容性</a><small>1</small></li>
+  
     <li><a href="/categories/生活/">生活</a><small>2</small></li>
   
   </ul>
@@ -260,9 +256,9 @@ console.info(str);
   <h3 class="title">标签</h3>
   <ul class="entry">
   
-    <li><a href="/tags/css/">css</a><small>2</small></li>
+    <li><a href="/tags/css/">css</a><small>3</small></li>
   
-    <li><a href="/tags/js/">js</a><small>6</small></li>
+    <li><a href="/tags/js/">js</a><small>7</small></li>
   
     <li><a href="/tags/life/">life</a><small>2</small></li>
   

@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://yoursite.com/2013/09/17/为毛要用-prototype，这货是对象？“/</loc>
+    <lastmod>2013-09-17T08:25:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>http://yoursite.com/2013/09/17/前端路上的风景(bsie)/</loc>
+    <lastmod>2013-09-17T02:28:11.000Z</lastmod>
+  </url>
+  <url>
     <loc>http://yoursite.com/2013/09/15/传球/</loc>
     <lastmod>2013-09-15T15:23:15.000Z</lastmod>
   </url>
@@ -45,7 +53,7 @@
     <lastmod>2013-09-15T05:34:24.000Z</lastmod>
   </url>
   <url>
-    <loc>http://yoursite.com/404.html</loc>
+    <loc>http://yoursite.com/584_404.html</loc>
     <lastmod>2013-09-14T15:15:04.000Z</lastmod>
   </url>
 </urlset>
