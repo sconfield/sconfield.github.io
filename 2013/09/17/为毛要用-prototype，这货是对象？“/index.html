@@ -72,14 +72,48 @@
     <div class="entry">
       
         <blockquote>
-<p>自从踏上 JavaScript 这首贼船，prototype 就在我身边阴魂不散。真不知道是哪个二货设计了 prototype chain 这个模式，居然用这么奇葩的方式来实现继承。对于远古圣人的这种设计思想，我表示很尊重，真相永远只有一个！</p>
+<p>自从自愿踏上 JavaScript 这首贼船，prototype 就在我身边阴魂不散。真不知道是哪个二货设计了 prototype chain 这个模式，居然用这么奇葩的方式来实现继承。对于远古圣人的这种设计思想，我表示很尊重，真相永远只有一个！</p>
 </blockquote>
 <h3>JavaScript、Java、JavaScript、Java……</h3>
-<p>对，就像你看到的一样，JavaScript 和 Java 之间有过不堪回首的基情。当时的设计者 Michael Scofield 失散多年的哥哥 <a href="http://brendaneich.com/" target="_blank">Brendan Eich</a> 不惧 Sun 公司的<em>威逼</em>，坚决不将 OOP 引入 JavaScript；但是在 Sun 公司的<em>利诱</em>下艰难的把 <strong>new</strong> 命令引入到了 JavaScript中。</p>
+<p>对，就像你看到的一样，JavaScript 和 Java 之间有过不堪回首的基情。当时的设计者 Michael Scofield 失散多年的哥哥 <a href="http://brendaneich.com" target="_blank">Brendan Eich</a> 不惧 Sun 公司的<em>威逼</em>，坚决不将 OOP 引入 JavaScript；但是在 Sun 公司的<em>利诱</em>下艰难的把 <strong>new</strong> 命令引入到了 JavaScript中。</p>
 <h3>new，中看不中用</h3>
-<p>由于 Sun 公司不够<em>意思</em>，所以 Big Fish 也只是<em>意思意思</em>。在 JavaScript 中，new 后面跟的根本就不是类，只是构造<strong>函数</strong>而已（毛用没得，完全不能继承啊）。</p>
-<p>以上内容不管你信不信，反正我编的！</p>
-<p>待续……哥要买菜去鸟！！！</p>
+<p>由于 Sun 公司不够<em>意思</em>，所以 <a href="http://brendaneich.com" target="_blank">Big Fish</a> 也只是<em>意思意思</em>。在 JavaScript 中，new 后面跟的根本就不是类，只是构造<strong>函数</strong>而已（毛用没得，完全不能继承啊）。当你 new 一个类的时候，该类的实例会自动生成一个 constructor 属性，指向你定义的构造函数。所以呢，继承呢？对，这只是构造……</p>
+<figure class="highlight lang-coffeescript"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre>Language (name) -&gt;
+	<span class="property">@name</span> = name
+
+js = <span class="keyword">new</span> Language(<span class="string">"javascript"</span>)
+java = <span class="keyword">new</span> Language(<span class="string">"java"</span>)
+
+console.info(js.constructor <span class="keyword">is</span> Language) <span class="regexp">//</span> <span class="literal">true</span>
+console.info(java.constructor <span class="keyword">instanceof</span> Language) <span class="regexp">//</span> <span class="literal">true</span>
+</pre></td></tr></table></figure>
+
+<h3>prototype 出现了</h3>
+<p>Sun 公司发现被坑了后，非常气愤。立马对 <a href="http://brendaneich.com" target="_blank">Brendan Eich</a> 进行了各种糖衣炮弹的合理围攻，终于使我们威武雄壮的 Scofield 的哥哥再一次做出了一个艰难的决定：给所有 JavaScript 类(<em>不是实例</em>)，增加一个<strong>类</strong>。</p>
+<p>在类上增加一个类，内部类？匿名内部类？哎呀，这是咋回事啊！当然不是咯，为了减少紧缺资源的占用。<a href="http://brendaneich.com" target="_blank">Fish</a> 规定每一个构造函数都有一个 prototype 属性，她指向一个对象，这个对象的所有东东都会被构造函数的实例共享。 因此所有实例在默认情况下都有一个原型(<em>prototype</em>)。</p>
+<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="function"><span class="keyword">function</span> <span class="title">Foo</span><span class="params">()</span> {</span>};
+<span class="keyword">var</span> foo = <span class="keyword">new</span> Foo();
+Foo.prototype.label = <span class="string">"sconfield"</span>;
+alert(Foo.label); <span class="comment">//output: undefined</span>
+alert(foo.label); <span class="comment">//output: sconfield</span>
+</pre></td></tr></table></figure>
+
+<h3>arguments</h3>
+<h3>滚粗</h3>
+<p>小米发布会终于听完了，以上内容不管你信不信，反正我编的！</p>
 
       
     </div>
