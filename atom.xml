@@ -1,16 +1,142 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title><![CDATA[张小盒的前端世界]]></title>
-  <subtitle><![CDATA[以此 blog 来怀念张小盒童鞋长年累月所敲过的代码。]]></subtitle>
+  <title><![CDATA[Code Wall]]></title>
+  <subtitle><![CDATA[以此 blog 来怀念 sconfield 童鞋长年累月所敲过的代码。]]></subtitle>
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   <link href="http://yoursite.com"/>
-  <updated>2013-09-23T03:34:39.608Z</updated>
+  <updated>2013-09-30T09:49:39.460Z</updated>
   <id>http://yoursite.com/</id>
   <author>
     <name><![CDATA[sconfield]]></name>
     <email><![CDATA[sconfield.meizu@gmail.com]]></email>
   </author>
   <generator uri="http://zespia.tw/hexo">Hexo</generator>
+  <entry>
+    <title type="html"><![CDATA[Linux 常用命令速成]]></title>
+    <link href="http://yoursite.com/2013/09/30/linux-常用命令速成/"/>
+    <id>http://yoursite.com/2013/09/30/linux-常用命令速成/</id>
+    <published>2013-09-30T06:26:54.000Z</published>
+    <updated>2013-09-30T08:35:51.000Z</updated>
+    <content type="html"><![CDATA[<blockquote>
+<p>由于新工作需要，必须得快速的熟练各种 Linux 命令。所以我决定和 Linux 闪婚，就算我并不了解她！</p>
+</blockquote>
+<p>　　为什么她存在，为什么她被广泛应用，为什么她安全可靠？这些东东日后慢慢会懂，现在不需要关心她与 unix 的激情；不在乎是不是 elementary OS 最美；现在需要快速的掌握常用的 Linux 命令，仅此而已。</p>
+<p>当登陆像 Linux 这样的文本系统（<em>特别是远程</em>），首先要用到的就是 <strong>cd</strong> 和 <strong>ls</strong>。</p>
+<ul>
+<li><strong>c</strong><del>hange</del> <strong>d</strong><del>irectory</del><ul>
+<li>cd [目录路径]<ul>
+<li>进入到指定目录</li>
+</ul>
+</li>
+<li>cd ..<ul>
+<li>回到上层目录</li>
+</ul>
+</li>
+<li>cd /<ul>
+<li>进入根目录</li>
+</ul>
+</li>
+<li>cd ~<ul>
+<li>当前用户的默认工作目录</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>l</strong><del>i</del><strong>s</strong><del>t</del><ul>
+<li>ls -a<ul>
+<li>显示所有文件，<em>以 “.” 开头的文件被系统视为隐藏文件</em></li>
+</ul>
+</li>
+<li>ls -l<ul>
+<li>以列表形式显示文件详细信息</li>
+</ul>
+</li>
+<li>ls -t<ul>
+<li>以时间排序</li>
+</ul>
+</li>
+<li>ls -rt<ul>
+<li>按时间逆序</li>
+</ul>
+</li>
+<li>ls -S<ul>
+<li>以大小排序</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<a id="more"></a>
+
+<p>cd 和 ls 可以方便的定位到我们已知的文件或目录。当找到我们想要的西西后，cp、mv、cat、more、less、vi 和 man 这些命令就需要掌握。</p>
+<ul>
+<li><strong>c</strong><del>o</del><strong>p</strong><del>y</del><ul>
+<li>cp *.jar ~lib<ul>
+<li>将所有 jar 包复制到工作空间下的 lib 目录中</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>m</strong><del>o</del><strong>v</strong><del>e</del><ul>
+<li>mv *.py ../demo<ul>
+<li>将 python 文件移动到上层目录的 demo 下</li>
+</ul>
+</li>
+<li>mv a.java b.java<ul>
+<li>将 a.java 重命名为 b.java</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><del>con</del><strong>cat</strong><del>enate</del><ul>
+<li>cat text<ul>
+<li>显示 text 内容</li>
+</ul>
+</li>
+<li>cat file1 file2<ul>
+<li>依次显示 file1, file2 文件</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>more<ul>
+<li>more textarea<ul>
+<li>分页显示 textarea 内容</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>less<ul>
+<li>less ~a.txt<ul>
+<li>滚屏显示工作空间下的 a.txt</li>
+</ul>
+</li>
+<li>less -p sconfield ~a.txt<ul>
+<li>搜索 a.txt 文件中的 “sconfield” 显示</li>
+</ul>
+</li>
+<li>less -m ~a.txt<ul>
+<li>显示读取文件的百分比</li>
+</ul>
+</li>
+<li>less -M ~a.txt<ul>
+<li>显法读取文件的百分比、行号及总行数</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>vi 神器无需解释</li>
+<li><strong>man</strong><del>ual</del> 查阅命令文档</li>
+</ul>
+<blockquote>
+<p>好了，输入了这么多命令了，应该 clear clear 了。</p>
+</blockquote>
+]]></content>
+    <category scheme="http://yoursite.com/tags/linux/" term="linux"/>
+    <category scheme="http://yoursite.com/categories/代码墙/" term="代码墙"/>
+  </entry>
   <entry>
     <title type="html"><![CDATA[为毛要用 prototype，这货是对象？]]></title>
     <link href="http://yoursite.com/2013/09/17/为毛要用-prototype，这货是对象？/"/>

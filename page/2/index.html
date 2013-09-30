@@ -3,23 +3,23 @@
 <head>
   <meta charset="utf-8">
   
-  <title>第 2 页 | 张小盒的前端世界</title>
+  <title>第 2 页 | Code Wall</title>
   <meta name="author" content="sconfield">
   
-  <meta name="description" content="sconfield 前端 javascript">
+  <meta name="description" content="sconfield javascript linux">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-  <meta property="og:site_name" content="张小盒的前端世界"/>
+  <meta property="og:site_name" content="Code Wall"/>
 
   
     <meta property="og:image" content="undefined"/>
   
 
   <link href="/favicon.png" rel="icon">
-  <link rel="alternate" href="atom.xml" title="张小盒的前端世界" type="application/atom+xml">
+  <link rel="alternate" href="atom.xml" title="Code Wall" type="application/atom+xml">
   <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   
@@ -33,8 +33,8 @@
 
 <body>
   <header id="header" class="inner"><div class="alignleft">
-  <h1><a href="/">张小盒的前端世界</a></h1>
-  <h2><a href="/">以此 blog 来怀念张小盒童鞋长年累月所敲过的代码。</a></h2>
+  <h1><a href="/">Code Wall</a></h1>
+  <h2><a href="/">以此 blog 来怀念 sconfield 童鞋长年累月所敲过的代码。</a></h2>
 </div>
 <nav id="main-nav" class="alignright">
   <ul>
@@ -56,6 +56,46 @@
 <div class="clearfix"></div></header>
   <div id="content" class="inner">
     <div id="main-col" class="alignleft"><div id="wrapper">
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2013-09-15T14:08:00.000Z"><a href="/2013/09/15/传球/">9月 15 2013</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2013/09/15/传球/">传球</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <blockquote>
+<p>传球，突然一声尖叫 <strong>“春哥，我爱你！”</strong> 三分线外接球后看都不看篮筐立马拔地而起，在空中我仿佛阿尔伯特*爱因斯坦附体，根据自己的广义狭义各种论、阿尔法贝塔贝吉塔等等函数计算后，我决定还是先把球扔出去再说。<strong>“唰”</strong> 信春哥，还是那么好使；信春哥，麻麻再也不用担心我的学习了！</p>
+</blockquote>
+<p>本来今天最想欺负 tom 的，可恶这货在网管加班穿衬衫，觉得穿衬衫打球不够 <em>迪奥</em>。看来只有下周再玩他咯，糊糊糊~</p>
+<p><img src="/img/hot_basketball.jpg" alt="传球"></p>
+
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2013/09/15/传球/#more" class="more-link">让我看看</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
   <article class="post">
   
   <div class="post-content">
@@ -157,91 +197,6 @@
 
 
 
-  <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2013-09-12T13:20:38.000Z"><a href="/2013/09/12/seajs-使用指南/">9月 12 2013</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2013/09/12/seajs-使用指南/">seajs 使用指南</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <blockquote>
-<p>Sea.js 提供了一个全局方法——define，用来定义一个 CMD 模块。</p>
-</blockquote>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
-2
-3
-4
-5
-</pre></td><td class="code"><pre>define(<span class="keyword">function</span>(require, exports, module) {
-    <span class="comment">// 模块代码</span>
-    <span class="comment">// 使用require获取依赖模块的接口</span>
-    <span class="comment">// 使用exports或者module来暴露该模块的对外接口</span>
-})
-</pre></td></tr></table></figure>
-
-<blockquote>
-<p>定义好模块后，在页面引入 sea.js。为了让 sea.js 内部能快速获取到自身路径，推荐手动加上 id 属性。</p>
-</blockquote>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-</pre></td><td class="code"><pre>&lt;script src=<span class="string">"http://path/to/seajs/1.2.0/sea.js"</span> id=<span class="string">"seajs"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
-<span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript">
-    seajs.use(<span class="string">'./hello'</span>)
-
-    <span class="comment">// 可以带 callback</span>
-    seajs.use(<span class="string">'./hello'</span>, <span class="keyword">function</span>(hello) {
-      hello.api()
-    })
-    
-    <span class="comment">// 也可同时（依次）加载多个模块</span>
-    seajs.use([<span class="string">'./hello'</span>, <span class="string">'./world'</span>], <span class="keyword">function</span>(hello, world) {
-      hello.api()
-      world.api()
-    })
-</span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span>
-</pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2013/09/12/seajs-使用指南/#more" class="more-link">让我看看</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
 
 <nav id="pagination">
   
@@ -265,7 +220,7 @@
   <h3 class="title">分类</h3>
   <ul class="entry">
   
-    <li><a href="/categories/代码墙/">代码墙</a><small>8</small></li>
+    <li><a href="/categories/代码墙/">代码墙</a><small>9</small></li>
   
     <li><a href="/categories/兼容性/">兼容性</a><small>1</small></li>
   
@@ -286,6 +241,8 @@
   
     <li><a href="/tags/life/">life</a><small>2</small></li>
   
+    <li><a href="/tags/linux/">linux</a><small>1</small></li>
+  
   </ul>
 </div>
 
@@ -294,7 +251,7 @@
 <div class="widget tagcloud">
   <h3 class="title">标签云</h3>
   <div class="entry">
-    <a href="/tags/css/" style="font-size: 10.00px;">css</a><a href="/tags/js/" style="font-size: 13.33px;">js</a><a href="/tags/life/" style="font-size: 16.67px;">life</a>
+    <a href="/tags/css/" style="font-size: 10.00px;">css</a><a href="/tags/js/" style="font-size: 12.50px;">js</a><a href="/tags/life/" style="font-size: 15.00px;">life</a><a href="/tags/linux/" style="font-size: 17.50px;">linux</a>
   </div>
 </div>
 

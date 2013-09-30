@@ -3,23 +3,23 @@
 <head>
   <meta charset="utf-8">
   
-  <title>第 4 页 | 张小盒的前端世界</title>
+  <title>第 4 页 | Code Wall</title>
   <meta name="author" content="sconfield">
   
-  <meta name="description" content="sconfield 前端 javascript">
+  <meta name="description" content="sconfield javascript linux">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-  <meta property="og:site_name" content="张小盒的前端世界"/>
+  <meta property="og:site_name" content="Code Wall"/>
 
   
     <meta property="og:image" content="undefined"/>
   
 
   <link href="/favicon.png" rel="icon">
-  <link rel="alternate" href="atom.xml" title="张小盒的前端世界" type="application/atom+xml">
+  <link rel="alternate" href="atom.xml" title="Code Wall" type="application/atom+xml">
   <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   
@@ -33,8 +33,8 @@
 
 <body>
   <header id="header" class="inner"><div class="alignleft">
-  <h1><a href="/">张小盒的前端世界</a></h1>
-  <h2><a href="/">以此 blog 来怀念张小盒童鞋长年累月所敲过的代码。</a></h2>
+  <h1><a href="/">Code Wall</a></h1>
+  <h2><a href="/">以此 blog 来怀念 sconfield 童鞋长年累月所敲过的代码。</a></h2>
 </div>
 <nav id="main-nav" class="alignright">
   <ul>
@@ -56,6 +56,45 @@
 <div class="clearfix"></div></header>
   <div id="content" class="inner">
     <div id="main-col" class="alignleft"><div id="wrapper">
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2013-09-12T13:05:41.000Z"><a href="/2013/09/12/css-边距简写，值复制/">9月 12 2013</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2013/09/12/css-边距简写，值复制/">css 边距简写，值复制</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p><img src="/img/ct_css_margin_value.gif" alt="css 边距简写"></p>
+<h3>值复制：</h3>
+<ul>
+<li>4个值，按顺时针赋值，图中从左往右；</li>
+<li>3个值，<strong>left</strong> 从 <strong>right</strong> 复制得到；</li>
+<li>2个值，<strong>top</strong> 和 <strong>bottom</strong> 一组，<strong>right</strong> 和 <strong>left</strong> 一组；</li>
+<li>1个值，全部一样。</li>
+</ul>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
   <article class="post">
   
   <div class="post-content">
@@ -185,86 +224,13 @@ console.info(str);
 
 
 
-  <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2010-11-26T15:29:32.000Z"><a href="/2010/11/26/jquerytreeview-树界降临/">11月 26 2010</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2010/11/26/jquerytreeview-树界降临/">jQuery.treeview 树界降临</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <blockquote>
-<p>农民工的小康生活都是浮云，明天终于要加班了。。。<br>放下杯具，开始调戏代码吧。</p>
-</blockquote>
-<p>　　最近搞了半天（办了很多天）的树，让哥哥我被玩够了。终于忍不住重整了一遍，将每个树节点构造成 TreeNode 的一个实例，存放在 dx_tree 数组中。TreeNode 有显示图层信息和加载子节点的方法：</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-</pre></td><td class="code"><pre>window.dx_tree=[];
-
-<span class="function"><span class="keyword">function</span> <span class="title">TreeNode</span><span class="params">(id, name, isDir, initLayer)</span> {</span>
-    <span class="function"><span class="keyword">function</span> <span class="title">_treenode</span><span class="params">()</span>{</span>
-        <span class="keyword">this</span>.id = id;
-        <span class="keyword">this</span>.name = name;
-        <span class="keyword">this</span>.isDir = isDir;
-        <span class="keyword">this</span>.initLayer = initLayer;
-    }
-    <span class="keyword">this</span>.prototype.createMe = <span class="keyword">function</span>() {
-        <span class="comment">//创建国人这个节点</span>
-        window.dx_tree[id] = <span class="keyword">this</span>;
-    };
-    <span class="keyword">this</span>.prototype.createChildren = <span class="keyword">function</span>() {
-        <span class="comment">//创建国人娃儿这些节点（利用createMe）</span>
-    }
-}
-</pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2010/11/26/jquerytreeview-树界降临/#more" class="more-link">让我看看</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
 
 <nav id="pagination">
   
     <a href="/page/3/" class="alignleft prev">上一页</a>
   
+  
+    <a href="/page/5/" class="alignright next">下一页</a>
   
   <div class="clearfix"></div>
 </nav></div></div>
@@ -281,7 +247,7 @@ console.info(str);
   <h3 class="title">分类</h3>
   <ul class="entry">
   
-    <li><a href="/categories/代码墙/">代码墙</a><small>8</small></li>
+    <li><a href="/categories/代码墙/">代码墙</a><small>9</small></li>
   
     <li><a href="/categories/兼容性/">兼容性</a><small>1</small></li>
   
@@ -302,6 +268,8 @@ console.info(str);
   
     <li><a href="/tags/life/">life</a><small>2</small></li>
   
+    <li><a href="/tags/linux/">linux</a><small>1</small></li>
+  
   </ul>
 </div>
 
@@ -310,7 +278,7 @@ console.info(str);
 <div class="widget tagcloud">
   <h3 class="title">标签云</h3>
   <div class="entry">
-    <a href="/tags/css/" style="font-size: 10.00px;">css</a><a href="/tags/js/" style="font-size: 13.33px;">js</a><a href="/tags/life/" style="font-size: 16.67px;">life</a>
+    <a href="/tags/css/" style="font-size: 10.00px;">css</a><a href="/tags/js/" style="font-size: 12.50px;">js</a><a href="/tags/life/" style="font-size: 15.00px;">life</a><a href="/tags/linux/" style="font-size: 17.50px;">linux</a>
   </div>
 </div>
 

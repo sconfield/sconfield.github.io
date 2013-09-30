@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>seajs 使用指南 | Code Wall</title>
+  <title>Linux 常用命令速成 | Code Wall</title>
   <meta name="author" content="sconfield">
   
   <meta name="description" content="sconfield javascript linux">
@@ -11,7 +11,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="seajs 使用指南"/>
+  <meta property="og:title" content="Linux 常用命令速成"/>
   <meta property="og:site_name" content="Code Wall"/>
 
   
@@ -61,160 +61,132 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2013-09-12T13:20:38.000Z"><a href="/2013/09/12/seajs-使用指南/">9月 12 2013</a></time>
+        <time datetime="2013-09-30T06:26:54.000Z"><a href="/2013/09/30/linux-常用命令速成/">9月 30 2013</a></time>
       
       
   
-    <h1 class="title">seajs 使用指南</h1>
+    <h1 class="title">Linux 常用命令速成</h1>
   
 
     </header>
     <div class="entry">
       
         <blockquote>
-<p>Sea.js 提供了一个全局方法——define，用来定义一个 CMD 模块。</p>
+<p>由于新工作需要，必须得快速的熟练各种 Linux 命令。所以我决定和 Linux 闪婚，就算我并不了解她！</p>
 </blockquote>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
-2
-3
-4
-5
-</pre></td><td class="code"><pre>define(<span class="keyword">function</span>(require, exports, module) {
-    <span class="comment">// 模块代码</span>
-    <span class="comment">// 使用require获取依赖模块的接口</span>
-    <span class="comment">// 使用exports或者module来暴露该模块的对外接口</span>
-})
-</pre></td></tr></table></figure>
-
-<blockquote>
-<p>定义好模块后，在页面引入 sea.js。为了让 sea.js 内部能快速获取到自身路径，推荐手动加上 id 属性。</p>
-</blockquote>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-</pre></td><td class="code"><pre>&lt;script src=<span class="string">"http://path/to/seajs/1.2.0/sea.js"</span> id=<span class="string">"seajs"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
-<span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript">
-    seajs.use(<span class="string">'./hello'</span>)
-
-    <span class="comment">// 可以带 callback</span>
-    seajs.use(<span class="string">'./hello'</span>, <span class="keyword">function</span>(hello) {
-      hello.api()
-    })
-    
-    <span class="comment">// 也可同时（依次）加载多个模块</span>
-    seajs.use([<span class="string">'./hello'</span>, <span class="string">'./world'</span>], <span class="keyword">function</span>(hello, world) {
-      hello.api()
-      world.api()
-    })
-</span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span>
-</pre></td></tr></table></figure>
-
+<p>　　为什么她存在，为什么她被广泛应用，为什么她安全可靠？这些东东日后慢慢会懂，现在不需要关心她与 unix 的激情；不在乎是不是 elementary OS 最美；现在需要快速的掌握常用的 Linux 命令，仅此而已。</p>
+<p>当登陆像 Linux 这样的文本系统（<em>特别是远程</em>），首先要用到的就是 <strong>cd</strong> 和 <strong>ls</strong>。</p>
+<ul>
+<li><strong>c</strong><del>hange</del> <strong>d</strong><del>irectory</del><ul>
+<li>cd [目录路径]<ul>
+<li>进入到指定目录</li>
+</ul>
+</li>
+<li>cd ..<ul>
+<li>回到上层目录</li>
+</ul>
+</li>
+<li>cd /<ul>
+<li>进入根目录</li>
+</ul>
+</li>
+<li>cd ~<ul>
+<li>当前用户的默认工作目录</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>l</strong><del>i</del><strong>s</strong><del>t</del><ul>
+<li>ls -a<ul>
+<li>显示所有文件，<em>以 “.” 开头的文件被系统视为隐藏文件</em></li>
+</ul>
+</li>
+<li>ls -l<ul>
+<li>以列表形式显示文件详细信息</li>
+</ul>
+</li>
+<li>ls -t<ul>
+<li>以时间排序</li>
+</ul>
+</li>
+<li>ls -rt<ul>
+<li>按时间逆序</li>
+</ul>
+</li>
+<li>ls -S<ul>
+<li>以大小排序</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <a id="more"></a>
 
+<p>cd 和 ls 可以方便的定位到我们已知的文件或目录。当找到我们想要的西西后，cp、mv、cat、more、less、vi 和 man 这些命令就需要掌握。</p>
+<ul>
+<li><strong>c</strong><del>o</del><strong>p</strong><del>y</del><ul>
+<li>cp *.jar ~lib<ul>
+<li>将所有 jar 包复制到工作空间下的 lib 目录中</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>m</strong><del>o</del><strong>v</strong><del>e</del><ul>
+<li>mv *.py ../demo<ul>
+<li>将 python 文件移动到上层目录的 demo 下</li>
+</ul>
+</li>
+<li>mv a.java b.java<ul>
+<li>将 a.java 重命名为 b.java</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><del>con</del><strong>cat</strong><del>enate</del><ul>
+<li>cat text<ul>
+<li>显示 text 内容</li>
+</ul>
+</li>
+<li>cat file1 file2<ul>
+<li>依次显示 file1, file2 文件</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>more<ul>
+<li>more textarea<ul>
+<li>分页显示 textarea 内容</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>less<ul>
+<li>less ~a.txt<ul>
+<li>滚屏显示工作空间下的 a.txt</li>
+</ul>
+</li>
+<li>less -p sconfield ~a.txt<ul>
+<li>搜索 a.txt 文件中的 “sconfield” 显示</li>
+</ul>
+</li>
+<li>less -m ~a.txt<ul>
+<li>显示读取文件的百分比</li>
+</ul>
+</li>
+<li>less -M ~a.txt<ul>
+<li>显法读取文件的百分比、行号及总行数</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>vi 神器无需解释</li>
+<li><strong>man</strong><del>ual</del> 查阅命令文档</li>
+</ul>
 <blockquote>
-<p>自定义配置，简化代码：seajs.config(options)</p>
+<p>好了，输入了这么多命令了，应该 clear clear 了。</p>
 </blockquote>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-</pre></td><td class="code"><pre>seajs.config({
-  <span class="comment">// 别名配置</span>
-  <span class="comment">// 使用 alias，可以让文件的真实路径与调用标识分开，有利于统一维护</span>
-  alias: {
-    <span class="string">'es5-safe'</span>: <span class="string">'gallery/es5-safe/0.9.3/es5-safe'</span>,
-    <span class="string">'json'</span>: <span class="string">'gallery/json/1.0.2/json'</span>,
-    <span class="string">'jquery'</span>: <span class="string">'jquery/jquery/1.10.1/jquery'</span>
-  },
-
-  <span class="comment">// 路径配置</span>
-  <span class="comment">// 当目录比较深，或需要跨目录调用模块时，可以使用 paths 来简化书写</span>
-  paths: {
-    <span class="string">'gallery'</span>: <span class="string">'https://a.alipayobjects.com/gallery'</span>
-  },
-
-  <span class="comment">// 变量配置，模块路径在运行时才能确定</span>
-  <span class="comment">// vars 配置的是模块标识中的变量值，在模块标识中用 {key} 来表示变量</span>
-  vars: {
-    <span class="string">'locale'</span>: <span class="string">'zh-cn'</span>
-  },
-
-  <span class="comment">// 映射配置</span>
-  <span class="comment">// 该配置可对模块路径进行映射修改，可用于路径转换、在线调试等</span>
-  map: [
-    [<span class="string">'http://example.com/js/app/'</span>, <span class="string">'http://localhost/js/app/'</span>]
-  ],
-
-  <span class="comment">// 预加载项</span>
-  <span class="comment">// 可以在普通模块加载前，提前加载并初始化好指定模块</span>
-  preload: [
-    Function.prototype.bind ? <span class="string">''</span> : <span class="string">'es5-safe'</span>,
-    <span class="keyword">this</span>.JSON ? <span class="string">''</span> : <span class="string">'json'</span>
-  ],
-
-  <span class="comment">// 调试模式</span>
-  debug: <span class="literal">true</span>,
-
-  <span class="comment">// Sea.js 的基础路径</span>
-  base: <span class="string">'http://example.com/path/to/base/'</span>,
-
-  <span class="comment">// 文件编码</span>
-  charset: <span class="string">'utf-8'</span>
-});
-</pre></td></tr></table></figure>
-
-<p><em>注意：一般请不要配置 base 路径，把 sea.js 放在合适的路径往往更简单一致。</em></p>
 
       
     </div>
@@ -229,7 +201,7 @@
         
   
   <div class="tags">
-    <a href="/tags/js/">js</a>
+    <a href="/tags/linux/">linux</a>
   </div>
 
         
